@@ -18,4 +18,7 @@ export class MissionService {
       return acc;
     }, {});
   }
+  findAll() {
+    return this.missions;
+  }
 }
