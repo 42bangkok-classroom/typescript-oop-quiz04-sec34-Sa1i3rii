@@ -1,5 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { MissionService } from './mission.service';
+import { IMission } from './mission.interface';
 
 @Controller('missions')
 export class MissionController {
@@ -10,9 +11,8 @@ export class MissionController {
     return this.missionService.getSummary();
   }
 
-  
   @Get()
-  findAll() {
+  findAll(): IMission[] {
     return this.missionService.findAll();
   }
 }
