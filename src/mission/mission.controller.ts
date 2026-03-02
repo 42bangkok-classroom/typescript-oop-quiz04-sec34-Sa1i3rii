@@ -13,5 +13,4 @@ export class MissionController {
   getAllMissions() {
     return this.missionService.findAll();
   }
-  
 }
