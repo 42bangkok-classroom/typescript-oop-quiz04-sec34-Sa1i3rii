@@ -35,7 +35,6 @@ export class MissionService {
         durationDays = Math.floor((end - start) / (1000 * 60 * 60 * 24));
       }
 
-     
       return { ...m, durationDays };
     });
   }
